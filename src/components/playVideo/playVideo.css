@@ -101,6 +101,10 @@
   color: #5a5a5a;
   margin-left: 0.5rem;
 }
+.comment h3,
+.comment p {
+  word-break: break-all;
+}
 .comment-action {
   display: flex;
   align-items: center;
@@ -115,4 +119,21 @@
 .comment-action span {
   margin-right: 20px;
   color: #5a5a5a;
+}
+@media (max-width: 900px) {
+  .play-video {
+    flex-basis: 100%;
+  }
+  .play-video iframe {
+    width: 100%;
+    height: 50vw;
+  }
+  .vid-subscription {
+    padding-left: 0;
+  }
+  .play-video .play-video-info span {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
 }
